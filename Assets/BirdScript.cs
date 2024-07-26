@@ -17,6 +17,7 @@ public class BirdScript : MonoBehaviour
     void Update()
     {
         myRigidbody.velocity = Vector2.up * 10;
+
         
     }
 }
