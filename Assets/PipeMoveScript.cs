@@ -16,6 +16,10 @@ public class PipeMoveScript : MonoBehaviour
     void Update()
     {
         transform.position += Vector3.left * moveSpeed * Time.deltaTime;
+        if(transform.position.x < deadZone)
+        {
+            Destroy(gameObject);
+        }
         
     }
 }
