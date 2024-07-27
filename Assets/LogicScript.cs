@@ -9,7 +9,7 @@ public class LogicScript : MonoBehaviour
     public int playScore;
     public Text scoreText;
     public GameObject gameOverPanel;
-    public bool birdAlive = true;
+    
 
     //[ContextMenu("Increment Score")]
     public void AddScore(int scoreToAdd)
@@ -27,7 +27,7 @@ public class LogicScript : MonoBehaviour
     public void GameOver()
     {
         gameOverPanel.SetActive(true);
-        birdAlive = false;
+        
 
     }
 }
